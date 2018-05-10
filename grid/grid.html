@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Grid</title>
+        <style>
+            .wrapper{
+                display:grid;
+                grid-template-columns: 50% 50%;
+                grid-gap: .5em
+            }
+            .wrapper > div{
+                background: #eefe;
+                padding:1em;
+            }
+            .wrapper > div:nth-child(odd){
+                background: #ddfe
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                COLUMN Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ipsum maiores rem mollitia nobis repellat itaque officia corrupti labore nostrum molestiae illum consectetur eaque nisi reprehenderit, et vitae. Molestiae, nulla.
+            </div>
+            <div>
+                SIDEBAR Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque maxime porro expedita maiores reiciendis, eligendi dolor repellat mollitia, quaerat, animi doloribus cum delectus voluptas ipsum inventore vel quis rem sapiente!
+            </div>
+            <div>whee</div>
+            <div>double whee</div>
+        </div>
+    </body>
+</html>
